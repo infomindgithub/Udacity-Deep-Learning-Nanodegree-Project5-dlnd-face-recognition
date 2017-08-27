@@ -1,0 +1,10 @@
+Restart the Jupyter Notebook after MNIST data is downloaded and extracted, and if it has downloaded Celeba data and sitting on "Extracting Celeba..."
+choose kernel/restart atthe top ofthe jupyter notebook. Then it worked and the models started training.
+
+From DLND Project 5 Forum on Udacity:
+"I didn't use tf.reset_default_graph() anywhere. I'm suspicious this might be the problem. I think it might need to go in the beginning of the train method.)
+
+created
+May 23
+Reply: shaunlippyForum MentorMay 24
+That might be the issue. Just make sure you don't call it from within a tf.Session(), as that can cause unpredictable behavior (per the docs)."

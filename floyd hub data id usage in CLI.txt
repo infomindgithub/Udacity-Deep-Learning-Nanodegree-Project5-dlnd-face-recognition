@@ -1,0 +1,7 @@
+"R5KrjnANiKVhLWAkpXhNBe"
+
+infomind/dlnd-face-generation/3
+
+floyd run --gpu --env tensorflow-1.0 --mode jupyter --data R5KrjnANiKVhLWAkpXhNBe
+
+
